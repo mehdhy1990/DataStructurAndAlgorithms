@@ -75,4 +75,26 @@ public class Exercise
             Console.WriteLine($"{item.Key}: {item.Value}");
         }
     }
+
+    public static bool FrequencyCheck(int[] array1, int[] array2)
+    {
+        if (array1.Length != array2.Length) return false;
+        var dict = new Dictionary<int, int>();
+        foreach (var item in array1)
+        {
+            dict[item*item] = item;
+        }
+
+        var num = 0;
+        foreach (var item in array2)
+        {
+            if (dict.ContainsKey(item))
+            {
+                num++;
+            }
+        }
+        if(num == array1.Length)return true;
+        return false;
+
+    }
 }

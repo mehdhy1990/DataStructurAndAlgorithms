@@ -97,4 +97,32 @@ public class Exercise
         return false;
 
     }
+
+    public static bool AnagramCheck(string name1,string name2)
+    {
+        var dict = new Dictionary<char, int>();
+        foreach (var item in name1)
+        {
+            if (dict.ContainsKey(item))
+            {
+                dict[item]++;
+                continue;
+            }
+            dict[item] = 1;
+        }
+
+        foreach (var item in name2)
+        {
+            if (dict.ContainsKey(item))
+            {
+                dict[item]--;
+                if(dict[item] < 0) return false;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        return true;
+    }
 }

@@ -12,3 +12,4 @@ C:\Users\mehdi\RiderProjects\ConsoleApp9\ConsoleApp9\obj\Debug\net9.0\refint\Con
 C:\Users\mehdi\RiderProjects\ConsoleApp9\ConsoleApp9\obj\Debug\net9.0\ConsoleApp9.pdb
 C:\Users\mehdi\RiderProjects\ConsoleApp9\ConsoleApp9\obj\Debug\net9.0\ConsoleApp9.genruntimeconfig.cache
 C:\Users\mehdi\RiderProjects\ConsoleApp9\ConsoleApp9\obj\Debug\net9.0\ref\ConsoleApp9.dll
+C:\Users\mehdi\RiderProjects\ConsoleApp9\ConsoleApp9\obj\Debug\net9.0\ConsoleApp9.sourcelink.json

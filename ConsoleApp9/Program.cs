@@ -6,6 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        var name = "111   aaaa!!!";
        
     }
 }

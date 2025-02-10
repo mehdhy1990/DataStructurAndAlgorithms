@@ -18,4 +18,18 @@ public class RecursionConcept
         if(number ==1) return 1;
         return number * Factorial(--number );
     }
+    public static List<int> OddCollector(List<int> numbers, List<int> result)
+    {
+        if (numbers.Count == 0) return result;
+        if (numbers[0] % 2 == 0)
+        {
+            numbers.Remove(numbers[0]);
+
+            return OddCollector(numbers, result);
+        }
+
+        result.Add(numbers[0]);
+        numbers.Remove(numbers[0]);
+        return OddCollector(numbers, result);
+    }
 }

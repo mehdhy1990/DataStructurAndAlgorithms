@@ -6,13 +6,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        var num = 5;
-       
+        
     }
 
+
     
-
-   
-
-   
 }

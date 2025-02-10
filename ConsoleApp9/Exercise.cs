@@ -143,4 +143,20 @@ public class Exercise
 
         Console.WriteLine("We don't have any matching numbers");
     }
+
+    public static void CountUninqeValues(int[] array)
+    {
+        var dict = new Dictionary<int, int>();
+        foreach (var item in array)
+        {
+            if(dict.ContainsKey(item)) continue;
+            else
+            {
+                dict.Add(item, 1);
+            }
+        }
+
+        Console.WriteLine(dict.Count);
+    }
+    
 }

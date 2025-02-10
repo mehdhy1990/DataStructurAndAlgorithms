@@ -13,5 +13,9 @@ public class RecursionConcept
     {
         if(num == 1) return 1;
         return num + SumRange(--num);
+    }public static int Factorial(int number)
+    {
+        if(number ==1) return 1;
+        return number * Factorial(--number );
     }
 }

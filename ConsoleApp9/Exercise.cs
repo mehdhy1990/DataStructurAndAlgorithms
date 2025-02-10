@@ -125,4 +125,22 @@ public class Exercise
         }
         return true;
     }
+
+    public static void SumZero(int[] array)
+    {
+        var j = array.Length - 1;
+        var i = 0;
+        while (i < j)
+        {
+            if(array[i] + array[j]==0)
+            {
+                Console.WriteLine($"the numbers are {array[i]} and {array[j]}");
+               return;
+            };
+            if(array[i] +array[j]<0) i++;
+            if(array[i] +array[j]>0) j--;
+        }
+
+        Console.WriteLine("We don't have any matching numbers");
+    }
 }

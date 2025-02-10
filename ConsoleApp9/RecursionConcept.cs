@@ -9,5 +9,9 @@ public class RecursionConcept
         number--;
         CountDown(number);
         
+    } public static int SumRange(int num)
+    {
+        if(num == 1) return 1;
+        return num + SumRange(--num);
     }
 }
